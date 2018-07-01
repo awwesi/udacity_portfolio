@@ -1,0 +1,106 @@
+body{
+  font-family: arial, helvetica, sans-serif;
+}
+img{
+  max-width: 100%;
+}
+.container{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header{
+  width: 100%;
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.headertext{
+  width: 75%;
+  text-align: right;
+  }
+.header .line{
+  border-bottom: solid 4px #7d97ad;
+  width:100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.logo{
+	width: 25%;
+  position: relative;
+}
+.imglogo{
+  max-width: 48px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.headerinnertext{
+  color: #2d3c49;
+}
+.imgmain{
+	padding-top: 20px;
+	width: 100%;
+}
+h1{
+  font-family: "helvetica", sans-serif;
+	text-transform: uppercase;
+	font-size: 2em;
+  font-weight: normal;
+	margin-bottom: 0px;
+	margin-top: 0px;
+  }
+h4{
+    font-weight: bold;
+    margin-bottom: 0px;
+  	margin-top: 5px;
+  }
+.heading{
+  color: #7d97ad;
+  font-weight: normal;
+}
+#detailitems{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.portfolioitem{
+	width: 32%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.portfolioitem:nth-of-type(even){
+  margin-right:2%;
+  margin-left:2%;
+}
+.itemtext{
+  color: #2d3c49;
+}
+.articleinnertext{
+  font-weight: normal;
+  margin-bottom: 5px;
+	margin-top: 5px;
+}
+.articleinnertext h2{
+  font-weight: normal;
+}
+@media screen and (min-width: 551px) and (max-width: 850px){
+  .portfolioitem{
+    width:49%;
+  }
+  .portfolioitem:nth-child(odd){
+    margin-right:10px;
+    margin-left:0px;
+  }
+  .portfolioitem:nth-child(even){
+    margin-right:0px;
+    margin-left:0px;
+  }
+}
+/*For devices with width up to 600px*/
+@media screen and (max-width: 550px){
+  .portfolioitem{
+    width:99%;
+  }
+}
